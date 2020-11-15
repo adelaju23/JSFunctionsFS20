@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Functions</title>
     <script>
+        function printCell(content) {
+            document.write("<td>" + content + "</td>");
+        }
+
         function createTable(rows, columns, winner) {
             document.write("<table border='1'>");
             document.write("<tbody>");
@@ -14,9 +18,9 @@
                 document.write("<tr>");
                 for (var j = 0; j < columns; j++) {
                     if (number != winner) {
-                        document.write("<td>" + (number++) + "</td>");
+                        printCell(number++);
                     } else {
-                        document.write("<td>" + "*" + "</td>");
+                        printCell("*");
                         number++;
                     }
                 } document.write("</tr>");
