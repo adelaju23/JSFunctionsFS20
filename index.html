@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Functions</title>
     <script>
-        function createTable(rows) {
+        function createTable(rows, columns) {
             document.write("<table border='1'>");
             document.write("<tbody>");
             var number = 1;
             for (var i = 0; i < rows; i++) {
                 document.write("<tr>");
-                for (var j = 0; j < 5; j++) {
+                for (var j = 0; j < columns; j++) {
                     document.write("<td>" + (number++) + "</td>");
                 } document.write("</tr>");
             }
@@ -20,9 +20,9 @@
             document.write("</table>");
         }
 
-        createTable(9);
-        createTable(5);
-        createTable(19);
+        createTable(9, 5);
+        createTable(5, 4);
+        createTable(19, 2);
 
     </script>
 </head>
