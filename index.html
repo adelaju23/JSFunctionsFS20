@@ -8,10 +8,11 @@
     <script>
         document.write("<table border='1'>");
         document.write("<tbody>");
+        var number = 1;
         for (var i = 0; i < 9; i++) {
             document.write("<tr>");
             for (var j = 0; j < 5; j++) {
-                document.write("<td>x</td>");
+                document.write("<td>"+ (number++) +"</td>");
             } document.write("</tr>");
         }
         document.write("</tbody>");
