@@ -10,7 +10,7 @@
             document.write("<td>" + content + "</td>");
         }
 
-        function createTable(rows, columns, winner) {
+        function createLuckyNumberTable(rows, columns, winner) {
             document.write("<table border='1'>");
             document.write("<tbody>");
             var number = 1;
@@ -29,9 +29,8 @@
             document.write("</table>");
         }
 
-        createTable(9, 5, 0);
         var winnerNumber = window.prompt("Give me the winner number");
-        createTable(5, 4, winnerNumber);
+        createLuckyNumberTable(5, 4, winnerNumber);
 
     </script>
 </head>
